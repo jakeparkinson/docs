@@ -29,7 +29,8 @@
               "essentials/vendor-applications",
               "essentials/vendor-management",
               "essentials/send-update",
-              "essentials/giveaways"
+              "essentials/giveaways",
+              "essentials/automated-email-notifications"
             ]
           },
           {
