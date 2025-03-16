@@ -33,6 +33,10 @@
             ]
           },
           {
+            "group": "Vendor Portal",
+            "pages": ["essentials/vendor-portal"]
+          },
+          {
             "group": "Print Shop",
             "pages": ["services/print-shop"]
           }
