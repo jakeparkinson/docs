@@ -30,7 +30,8 @@
               "essentials/vendor-management",
               "essentials/send-update",
               "essentials/giveaways",
-              "essentials/automated-email-notifications"
+              "essentials/automated-email-notifications",
+              "essentials/payment-processing"
             ]
           },
           {

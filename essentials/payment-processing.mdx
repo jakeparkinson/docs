@@ -1,0 +1,157 @@
+---
+title: "Payment Processing"
+description: "Set up and manage vendor payments through Stripe"
+---
+
+## Overview
+
+Seen Markets uses Stripe to process vendor payments securely. Market hosts can collect booth fees and other payments directly through the platform, with funds deposited to their connected Stripe account.
+
+<Note>
+  Seen Markets charges a 2% processing fee in addition to Stripe's standard
+  processing fees.
+</Note>
+
+## Setting Up Payments
+
+### Step 1: Connect Stripe Account
+
+Visit [seenmarkets.com/settings/payments](https://seenmarkets.com/settings/payments) to set up payments. You have two options:
+
+1. **Create a New Stripe Account**
+
+   - Complete the Stripe Connect onboarding process
+   - Provide required business information
+   - Set up payout details
+
+2. **Connect Existing Stripe Account**
+   - Select the option to use an existing account
+   - Log in to your Stripe account
+   - Authorize the connection
+
+### Step 2: Wait for Approval
+
+After connecting your account:
+
+- Stripe will review your information
+- Approval typically takes 1-2 business days
+- You'll be notified by email when approved
+
+### Step 3: Configure Stripe Settings
+
+Once approved, customize your Stripe account:
+
+1. **Brand Your Payment Experience**
+
+   - Visit [dashboard.stripe.com/settings/branding](https://dashboard.stripe.com/settings/branding)
+   - Add your business logo
+   - Set brand colors
+   - Customize payment page appearance
+
+2. **Configure Email Settings**
+   - Go to [dashboard.stripe.com/settings/emails](https://dashboard.stripe.com/settings/emails)
+   - Customize receipt emails
+   - Set up payment notifications
+   - Configure business details shown on receipts
+
+## Processing Payments
+
+### Requesting Payment
+
+From the market management page:
+
+<Frame caption="Vendor Management Table - Request and track payments">
+  <img
+    src="/images/vendor-management-table.png"
+    alt="Vendor Management Table"
+  />
+</Frame>
+
+1. Find the vendor in the table
+2. Click "Request Payment"
+3. Enter payment amount and description
+4. Submit the request
+
+The vendor will receive an email with:
+
+- Payment amount
+- Payment description
+- Secure Stripe Checkout link
+- Due date information
+
+### Managing Payments
+
+Track all transactions in the vendor management table:
+
+- **Pending Payments**
+
+  - View outstanding requests
+  - Cancel payment requests
+  - Resend payment links
+
+- **Completed Payments**
+
+  - View successful payments
+  - Download payment history
+  - Access transaction details
+
+- **Failed Payments**
+  - View declined transactions
+  - Send new payment requests
+  - Track payment attempts
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion icon="credit-card" title="Payment Setup">
+    - Complete all Stripe verification steps - Keep business information current
+    - Configure branding settings - Test payment flow
+  </Accordion>
+  <Accordion icon="money-bill" title="Payment Collection">
+    - Send requests promptly - Include clear payment descriptions - Set
+    reasonable due dates - Follow up on pending payments
+  </Accordion>
+  <Accordion icon="chart-line" title="Transaction Management">
+    - Monitor payment status regularly - Address failed payments quickly - Keep
+    transaction records - Reconcile payments monthly
+  </Accordion>
+</AccordionGroup>
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion icon="clock" title="When do I receive funds?">
+    Funds are typically available in your Stripe account within 2-7 business
+    days, depending on your Stripe payout schedule.
+  </Accordion>
+  <Accordion icon="percent" title="What are the fees?">
+    Seen Markets charges a 2% processing fee on top of Stripe's standard
+    processing fees. View current Stripe fees on their website.
+  </Accordion>
+  <Accordion icon="shield" title="Is payment processing secure?">
+    Yes, all payments are processed securely through Stripe's PCI-compliant
+    platform. Seen Markets never handles sensitive payment information.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup>
+  <Card
+    title="Vendor Management"
+    icon="users"
+    href="/essentials/vendor-management"
+  >
+    Manage vendor payments
+  </Card>
+  <Card
+    title="Email Notifications"
+    icon="envelope"
+    href="/essentials/automated-email-notifications"
+  >
+    Learn about payment emails
+  </Card>
+  <Card title="Vendor Portal" icon="user" href="/essentials/vendor-portal">
+    View vendor payment experience
+  </Card>
+</CardGroup>{" "}
