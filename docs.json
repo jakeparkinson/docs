@@ -31,7 +31,8 @@
               "essentials/send-update",
               "essentials/giveaways",
               "essentials/automated-email-notifications",
-              "essentials/payment-processing"
+              "essentials/payment-processing",
+              "essentials/email-integrations"
             ]
           },
           {
