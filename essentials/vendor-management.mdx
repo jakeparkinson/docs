@@ -5,190 +5,150 @@ description: "Efficiently manage your market vendors from application to attenda
 
 ## Overview
 
-The Vendor Management system helps you oversee all aspects of vendor operations, from application processing to booth assignments, payment tracking, and communication.
+The Vendor Management system helps you track and manage all of your market vendors in one place. From application review to payment collection, you can handle all vendor-related tasks directly from the vendor management table.
 
-## Key Features
+## Accessing Vendor Management
 
-<CardGroup cols={2}>
-  <Card title="Vendor Portal" icon="store">
-    Self-service vendor dashboard
-  </Card>
-  <Card title="Payment Tracking" icon="credit-card">
-    Manage booth fees and payments
-  </Card>
-  <Card title="Communication" icon="envelope">
-    Centralized vendor messaging
-  </Card>
-  <Card title="Data Management" icon="database">
-    Complete vendor records
-  </Card>
-</CardGroup>
+Access your market's vendor management from your market's management page:
 
-## Vendor Dashboard
-
-### Overview
-
-The central hub for managing your vendor relationships:
-
-- Vendor profiles
-- Application status
-- Payment history
-- Booth assignments
-- Communication logs
-
-### Key Actions
-
-- Process applications
-- Track payments
-- Assign booths
-- Send notifications
-- Export data
+<Frame caption="Market Management Page - Scroll to the bottom to find the vendor management table">
+  <img
+    src="/images/market-management-page.png"
+    alt="Market Management Dashboard"
+  />
+</Frame>
 
 ## Managing Vendors
 
-<Steps>
-  <Step title="Review Applications">
-    Process new vendor applications: - Check required documentation - Verify
-    business information - Review product offerings - Assess space requirements
-  </Step>
-  <Step title="Approve and Onboard">
-    Guide vendors through the onboarding process: - Send acceptance
-    notifications - Request additional documents - Collect booth fees - Assign
-    market space
-  </Step>
-  <Step title="Ongoing Management">
-    Handle day-to-day vendor operations: - Track attendance - Process special
-    requests - Manage schedule changes - Address concerns
-  </Step>
-</Steps>
+The vendor management table shows all vendors for your market:
+
+<Frame caption="Vendor Management Table">
+  <img
+    src="/images/vendor-management-table.png"
+    alt="Vendor Management Table"
+  />
+</Frame>
+
+### Adding Vendors
+
+There are two ways to add vendors to your market:
+
+1. **Through Application Form (Recommended)**
+
+   - Vendors apply through your market's application form
+   - Ensures all vendor information is up-to-date
+   - Collects responses to your custom questions
+
+2. **Import from Previous Markets**
+   - Import vendors from other markets you've managed
+   - Standard vendor information is transferred
+   - Note: Custom question responses won't be imported
+
+### Vendor Status Management
+
+Each vendor row shows key information and status:
+
+- **Status Options:**
+  - Pending (default)
+  - Approved
+  - Denied
+  - Waitlisted
+
+<Note>
+  Vendors automatically receive email notifications when you change their
+  status.
+</Note>
+
+### Viewing Vendor Details
+
+Expand any vendor row to see:
+
+- Complete application form responses
+- Payment history
+- Booth assignments
+- Giveaway prize contributions
+- Transaction history
 
 ## Payment Management
 
-### Fee Collection
+### Requesting Payment
 
-- Set up payment schedules
-- Track booth fee payments
-- Process utility charges
-- Handle additional fees
+1. Click the "Request Payment" button for a vendor
+2. Enter the requested amount
+3. Specify the line item (e.g., "Booth Fee Collection")
+4. Submit the request
 
-### Payment Options
+<Note>
+  Payment processing is handled through Stripe. You'll need to set up your
+  Stripe account to process payments.
+</Note>
 
-- Online payments
-- Manual payment recording
-- Payment plans
-- Refund processing
+### Payment Status Tracking
 
-## Communication Tools
+Monitor payment status directly in the vendor table:
 
-### Bulk Messaging
+- Pending: Payment has been requested
+- Complete: Payment has been received
+- Cancelled: Payment request was cancelled
 
-- Market updates
-- Weather alerts
-- Schedule changes
-- Important announcements
+### Managing Payment Requests
 
-### Individual Communication
+In the expanded vendor view, you can:
 
-- Application status
-- Payment reminders
-- Document requests
-- Special instructions
-
-## Vendor Records
-
-### Profile Information
-
-- Business details
-- Contact information
-- Product categories
-- Insurance status
-
-### Historical Data
-
-- Attendance records
-- Payment history
-- Booth locations
-- Customer feedback
+- Cancel pending payment requests
+- Resend payment links
+- View complete transaction history
+- Track all payments for the market
 
 ## Best Practices
 
 <AccordionGroup>
-  <Accordion icon="user-check" title="Vendor Relations">
-    - Maintain clear communication - Set consistent policies - Address issues
-    promptly - Gather regular feedback
+  <Accordion icon="user-check" title="Application Review">
+    - Review applications promptly - Maintain consistent approval criteria - Use
+    waitlist for popular markets - Keep vendors informed of status changes
   </Accordion>
-  <Accordion icon="file-lines" title="Documentation">
-    - Keep records updated - Track all communications - Document policy changes
-    - Maintain compliance records
+  <Accordion icon="credit-card" title="Payment Collection">
+    - Send payment requests early - Follow up on pending payments - Keep clear
+    payment records - Document any special arrangements
   </Accordion>
-  <Accordion icon="chart-simple" title="Performance Tracking">
-    - Monitor attendance - Track payment compliance - Review customer feedback -
-    Assess product quality
+  <Accordion icon="table" title="Data Management">
+    - Regularly update vendor statuses - Keep booth assignments current - Track
+    payment completion - Monitor giveaway participation
   </Accordion>
 </AccordionGroup>
-
-## Vendor Portal Features
-
-### For Vendors
-
-- Update business information
-- Submit documents
-- Make payments
-- View booth assignments
-- Access market materials
-
-### For Managers
-
-- Review vendor updates
-- Process requests
-- Track compliance
-- Manage permissions
-
-## Reports and Analytics
-
-### Standard Reports
-
-- Vendor roster
-- Payment status
-- Attendance records
-- Product mix
-
-### Custom Analytics
-
-- Vendor performance
-- Category distribution
-- Revenue analysis
-- Attendance trends
 
 ## Frequently Asked Questions
 
 <AccordionGroup>
-  <Accordion icon="id-card" title="How do vendors access their portal?">
-    Vendors receive login credentials upon application approval, accessing the
-    portal through your market's website.
+  <Accordion
+    icon="envelope"
+    title="How are vendors notified of status changes?"
+  >
+    Vendors receive automatic email notifications whenever you change their
+    status (approved, denied, or waitlisted).
   </Accordion>
-  <Accordion icon="clock" title="When are payments due?">
-    Payment schedules are customizable. Set due dates that work for your
-    market's operations.
+  <Accordion icon="credit-card" title="How do vendors pay their fees?">
+    Vendors receive an email with a payment link when you request payment. They
+    can pay securely through Stripe.
   </Accordion>
-  <Accordion icon="file-export" title="Can I export vendor data?">
-    Yes, export vendor information in various formats for external use or
-    reporting.
+  <Accordion icon="file-import" title="What happens when I import vendors?">
+    Basic vendor information transfers over, but they'll need to complete any
+    custom questions specific to the new market.
   </Accordion>
 </AccordionGroup>
 
 ## Next Steps
 
 <CardGroup>
-  <Card title="Booth Map" icon="map" href="/essentials/booth-map">
-    Manage vendor booth assignments
-  </Card>
   <Card
-    title="Digital Market Guide"
-    icon="qrcode"
-    href="/essentials/digital-market-guide"
+    title="Application Form"
+    icon="wpforms"
+    href="/essentials/vendor-applications"
   >
-    Showcase your vendors to shoppers
+    Customize your vendor application
+  </Card>
+  <Card title="Booth Map" icon="map" href="/essentials/booth-map">
+    Assign vendor booth locations
   </Card>
   <Card title="Giveaways" icon="gift" href="/essentials/giveaways">
     Coordinate vendor prize contributions
