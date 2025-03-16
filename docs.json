@@ -28,9 +28,13 @@
               "essentials/booth-map",
               "essentials/vendor-applications",
               "essentials/vendor-management",
-              "essentials/giveaways",
-              "services/print-shop"
+              "essentials/send-update",
+              "essentials/giveaways"
             ]
+          },
+          {
+            "group": "Print Shop",
+            "pages": ["services/print-shop"]
           }
         ]
       }
