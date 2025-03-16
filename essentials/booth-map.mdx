@@ -5,129 +5,123 @@ description: "Create and manage your market's interactive booth layout"
 
 ## Overview
 
-The Booth Map Designer helps you create professional, interactive layouts of your market space. Easily design your venue layout, manage booth assignments, and provide clear navigation for vendors and shoppers.
+The Booth Map Designer helps you create professional, interactive layouts of your market space. Design your venue layout, manage booth assignments, and provide clear navigation for vendors and shoppers.
 
-## Key Features
+## Accessing the Designer
 
-<CardGroup cols={2}>
-  <Card title="Visual Editor" icon="pen-to-square">
-    Drag-and-drop interface for easy layout creation
-  </Card>
-  <Card title="Booth Management" icon="table-cells">
-    Define and customize individual booth spaces
-  </Card>
-  <Card title="Assignment Tools" icon="user-check">
-    Efficiently assign vendors to booth locations
-  </Card>
-  <Card title="Interactive Display" icon="mobile">
-    Mobile-friendly maps for shoppers
-  </Card>
-</CardGroup>
+Access the Booth Map Designer directly from your market's management page:
 
-## Creating Your Market Layout
+<Frame caption="Market Management Page - Click the 'Booth Map' card to open the designer">
+  <img
+    src="/images/market-management-page.png"
+    alt="Market Management Dashboard"
+  />
+</Frame>
+
+## Creating Your Layout
+
+When you first open the designer, you'll see an empty canvas ready for your market layout:
+
+<Frame caption="Empty Booth Map Designer">
+  <img src="/images/empty-booth-map.png" alt="Empty Booth Map Designer" />
+</Frame>
+
+### Import Existing Layout
+
+If you have an existing market layout you'd like to use:
+
+- Click the "Import Layout" button
+- Select the market you want to import the layout from
+- The layout will be copied to your current market
+
+### Adding Landmarks
+
+Use landmarks to mark important locations in your market:
+
+1. Click the "Add Landmark" button
+2. Choose from preset options:
+   - Entrance
+   - Exit
+   - Bathrooms
+   - Doors
+   - Power outlets
+   - Custom (add your own label)
+3. Place the landmark on your map
+
+### Adding Booths
 
 <Steps>
-  <Step title="Start New Layout">
-    Click "Create New Layout" in the Booth Map section of your market dashboard
+  <Step title="Create Booths">
+    Click the "Add Booths" button to open the booth creation dialog:
+    <Frame caption="Add Booths Dialog">
+      <img src="/images/add-booths.png" alt="Add Booths Dialog" />
+    </Frame>
   </Step>
-  <Step title="Set Dimensions">
-    Define your market space: - Overall market dimensions - Aisle widths -
-    Entry/exit points
+  <Step title="Specify Details">
+    Enter: - Booth width - Booth height - Number of booths to create
   </Step>
-  <Step title="Add Booth Spaces">
-    Create booth spaces with: - Custom dimensions - Unique identifiers (e.g.,
-    "A1", "B2") - Special attributes (power access, etc.)
-  </Step>
-  <Step title="Define Features">
-    Add market features: - Restrooms - Information booth - Food court areas -
-    Emergency exits
+  <Step title="Place Booths">
+    - Booths will appear in the map area - Drag and drop them to desired
+    locations - Arrange them to match your venue layout
   </Step>
 </Steps>
 
-## Booth Types and Customization
+### Managing Booths
 
-### Standard Booth Options
+Click on any booth to access management options:
 
-- Single booth (10' x 10')
-- Double booth (10' x 20')
-- Corner booth
-- End cap booth
-- Food truck space
-- Custom dimensions
+<Frame caption="Booth Management Options">
+  <img src="/images/booth-assign-vendor.png" alt="Booth Management Options" />
+</Frame>
 
-### Booth Attributes
+Available actions:
 
-- Power access
-- Water access
-- Shade coverage
-- Surface type
-- Special requirements
-
-## Assigning Vendors
-
-<Steps>
-  <Step title="Access Assignment Tool">
-    Open the vendor assignment interface from your booth map
-  </Step>
-  <Step title="Select Booth">Click on an available booth space</Step>
-  <Step title="Choose Vendor">
-    Select from your approved vendor list or create a new vendor
-  </Step>
-  <Step title="Confirm Details">
-    Verify booth requirements match vendor needs
-  </Step>
-</Steps>
+- Assign vendor to booth
+- Rotate booth orientation
+- Remove booth from map
 
 <Note>
-  Pro Tip: Use the bulk assignment feature for recurring markets with consistent
-  vendor placements.
+  Assigned booths will appear green in the designer to help you track which
+  spaces are taken. This color coding is only visible in the designer view, not
+  in the public Digital Market Guide.
 </Note>
-
-## Map Management
-
-### Editing Your Layout
-
-- Add new booth spaces
-- Modify existing booths
-- Update market features
-- Adjust dimensions
-
-### Vendor Movement
-
-- Easily relocate vendors
-- Swap booth assignments
-- Mark booths as unavailable
-- Track historical placements
 
 ## Best Practices
 
 <AccordionGroup>
   <Accordion icon="ruler" title="Layout Planning">
-    - Ensure adequate aisle space - Group similar vendors strategically - Plan
-    for emergency access - Consider traffic flow
+    - Start with landmarks to establish key reference points - Group similar
+    booth sizes together - Leave adequate space for foot traffic - Consider
+    power outlet access when placing booths
   </Accordion>
-  <Accordion icon="arrows-to-dot" title="Booth Clustering">
-    - Group food vendors near seating - Place complementary vendors together -
-    Create themed areas - Consider noise levels
+  <Accordion icon="arrows-to-dot" title="Booth Organization">
+    - Use consistent orientation within sections - Create clear aisles and
+    pathways - Place similar vendors near each other - Ensure easy access to
+    amenities
   </Accordion>
-  <Accordion icon="wheelchair" title="Accessibility">
-    - Maintain ADA-compliant aisles - Mark accessible restrooms - Include ramp
-    locations - Plan for emergency exits
+  <Accordion icon="pen-to-square" title="Design Tips">
+    - Label landmarks clearly - Verify booth dimensions match vendor needs -
+    Double-check vendor assignments - Review layout from shopper perspective
   </Accordion>
 </AccordionGroup>
 
 ## Frequently Asked Questions
 
 <AccordionGroup>
-  <Accordion icon="arrows-rotate" title="Can I modify the layout mid-season?">
-    Yes, you can update your layout anytime. Changes will immediately reflect in
-    the Digital Market Guide.
+  <Accordion
+    icon="arrows-rotate"
+    title="Can I modify the layout after creating it?"
+  >
+    Yes, you can add, remove, or move booths and landmarks at any time. Changes
+    will automatically update in your Digital Market Guide.
   </Accordion>
-  <Accordion icon="copy" title="Can I save multiple layouts?">
-    Yes, save different layouts for various seasons or special events.
+  <Accordion icon="copy" title="Can I reuse layouts?">
+    Yes, use the "Import Layout" feature to copy a layout from another market
+    you manage.
   </Accordion>
-  <Accordion icon="file-export" title="Can I export the map?">
-    Yes, export your map as PDF or image files for printing or sharing.
+  <Accordion icon="users" title="How do vendors see their booth assignments?">
+    Vendors can view their assigned booth location through the vendor portal and
+    in the Digital Market Guide.
   </Accordion>
 </AccordionGroup>
 
@@ -135,20 +129,20 @@ The Booth Map Designer helps you create professional, interactive layouts of you
 
 <CardGroup>
   <Card
-    title="Vendor Applications"
-    icon="clipboard-list"
-    href="/essentials/vendor-applications"
-  >
-    Set up your vendor application process
-  </Card>
-  <Card
     title="Digital Market Guide"
     icon="qrcode"
     href="/essentials/digital-market-guide"
   >
-    Integrate your map into the digital guide
+    Preview how shoppers will see your layout
+  </Card>
+  <Card
+    title="Vendor Management"
+    icon="users"
+    href="/essentials/vendor-management"
+  >
+    Manage vendor booth assignments
   </Card>
   <Card title="Print Shop" icon="print" href="/services/print-shop">
-    Order printed maps and signage
+    Order booth number signs and market maps
   </Card>
 </CardGroup>{" "}
