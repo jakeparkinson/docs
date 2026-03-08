@@ -1,0 +1,90 @@
+---
+title: "How do I add my schedule of events to my website?"
+description: "Exactly how to put your Seen Markets event schedule on your own website"
+---
+
+## What the schedule page is
+
+Your organization has a **public schedule page** on Seen Markets that lists all your upcoming (and past) events. It's a live page — when you create or update events, the schedule updates automatically. Each event shows the name, date, location, vendor count, and a link for vendors to apply.
+
+The URL looks like: `https://seenmarkets.com/market-schedule/[your-id]/[your-org-name]`
+
+## How to get your schedule page URL
+
+<Steps>
+  <Step title="From the mobile app">
+    Open the **Schedule tab** (home screen). You'll see a **Schedule page** section with your URL. Tap to **copy** the link or **preview** it in the browser.
+  </Step>
+  <Step title="From the web">
+    Your schedule page URL is: `https://seenmarkets.com/market-schedule/[your-team-id]/[your-org-name-slug]`. You can find it linked from your dashboard or markets page.
+  </Step>
+</Steps>
+
+## Three ways to add it to your website
+
+### 1. Link to it (simplest)
+
+Add a link or button on your website that goes to your schedule page URL. This is the easiest option and works on any website.
+
+```html
+<a href="https://seenmarkets.com/market-schedule/YOUR_ID/your-org-name">
+  View our upcoming markets
+</a>
+```
+
+The schedule page is designed to look good on its own — it shows your organization name, all upcoming markets with dates and locations, and a link to apply to each one. It also has full SEO (search engine optimization) with structured data so Google can index your events.
+
+### 2. Embed it with an iframe
+
+If you want the schedule to appear directly inside your website (no redirect), embed it with an iframe:
+
+```html
+<iframe
+  src="https://seenmarkets.com/market-schedule/YOUR_ID/your-org-name"
+  width="100%"
+  height="800"
+  frameborder="0"
+  style="border: none; border-radius: 8px;"
+  title="Market Schedule"
+></iframe>
+```
+
+Adjust the `height` to fit your layout. The schedule page is responsive, so it works at any width.
+
+### 3. Link individual events
+
+If you only want to link to specific events (not the full schedule), use the **market page** URL for each event. Get it from the market's management page or the **Share** button → **Market Page**. The URL looks like:
+
+```
+https://seenmarkets.com/market/[market-id]/[market-name-slug]
+```
+
+You can also link directly to an event's **application form** if you want vendors to apply right away:
+
+```
+https://seenmarkets.com/markets/[market-id]/apply
+```
+
+## What visitors see
+
+When someone visits your schedule page, they see:
+
+- **Your organization name** as the page title.
+- **Upcoming markets** — each one shows the name, dates, location, number of approved vendors, and a link to view/apply.
+- **Past markets** — available below the upcoming section for reference.
+- **SEO-optimized** — Google indexes your events as structured data (schema.org Events), so they can appear in search results.
+
+## Tips
+
+- Add the schedule link to your website's **navigation menu** or **footer** so it's always accessible.
+- Include it in your **email newsletters** and **social media bios** so vendors can find all your events in one place.
+- The schedule page updates **automatically** — you don't need to change anything on your website when you add new events.
+- If you use the iframe embed, the page scrolls within the frame. Make sure the height is tall enough to show your events without excessive scrolling.
+
+## Quick reference
+
+| Method | Best for |
+|--------|----------|
+| **Link** | Any website. Simple. One click to view schedule. |
+| **Iframe embed** | Keeping visitors on your site. Schedule appears inline. |
+| **Individual event links** | Highlighting specific events or application forms. |

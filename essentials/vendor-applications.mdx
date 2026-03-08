@@ -5,161 +5,225 @@ description: "Streamline your vendor application and approval process"
 
 ## Overview
 
-Every market includes a professional vendor application form with standard questions pre-configured. You can customize the form with additional questions and market-specific information to collect exactly what you need from potential vendors.
+Every market includes a vendor application form with standard questions pre-configured. You customize it by editing inline — click on any yellow-highlighted section to add your own questions, update instructions, configure settings, and more. Vendors apply through a shareable link and their submissions appear in your vendor management table.
 
 ## Accessing the Application Form
 
-Access your application form directly from your market's management page:
+Open your market's management page and click the **Application Form** card. This opens a full-screen editor that shows your form exactly as vendors will see it, with yellow edit controls overlaid on each customizable section.
 
-<Frame caption="Market Management Page - Click the 'Application Form' card to view and edit your form">
+<Frame caption="Market Management Page - Click the 'Application Form' card to open the form editor">
   <img
     src="/images/market-management-page.png"
     alt="Market Management Dashboard"
   />
 </Frame>
 
-## Application Form Preview
+## How the Form Editor Works
 
-When you open the application form, you'll see a preview of what vendors will see:
+The editor is a **live preview of your application form**. There's no separate edit mode — you see the form as vendors see it, but with yellow-highlighted areas that you can click to customize. At the top you'll find:
 
-<Frame caption="Application Form Preview">
-  <img
-    src="/images/application-form-preview.png"
-    alt="Application Form Preview"
-  />
-</Frame>
+- **Share** — copy the application URL or share it.
+- **Form Settings** — set deadlines and waitlist rules.
+- **Import Form** — copy questions and settings from another market.
+- **URL bar** — shows the public application URL; click to copy.
+
+The form preview walks through the same steps vendors see:
+
+1. **Instructions page** — your market info and instructions, with a "Start Application" button.
+2. **Name and email** — standard fields (not editable).
+3. **Full form** — all standard fields, your custom questions, product categories, giveaway, tax ID, and terms. Yellow controls appear next to each customizable section.
 
 <Note>
-  Standard questions are automatically included in every application form to
-  ensure you collect essential vendor information. These standard questions
-  cannot be removed.
+  Standard questions (business name, contact info, description, etc.) are
+  included automatically and cannot be removed. They ensure you collect
+  essential vendor information every time.
 </Note>
 
 ## Customizing Your Form
 
-Click the "Edit Form" button to customize your application form:
+### Instructions
 
-<Frame caption="Form Editor">
-  <img src="/images/edit-form.png" alt="Form Editor" />
+At the top of the form, you'll see a yellow **"Edit Instructions"** badge with a pencil icon. Click it to write or update the instructions vendors see before they start the application:
+
+- Market details and rules
+- Vendor requirements
+- Booth fees and what's included
+- Important dates
+- Setup and teardown instructions
+
+Click **Save** when you're done. Vendors see this on the first page of the application.
+
+<Frame caption="Edit instructions ">
+  <img
+    src="/images/form-step-1.png"
+    alt="Market Management Dashboard"
+  />
 </Frame>
 
-### Adding Market Information
+### Custom Questions
 
-Use the text area at the top of the form to add important information about:
+On the form step, you'll see a yellow **"Add Question"** button at the bottom of the questions section. Click it to add your own questions. Question types:
 
-- Market details
-- Vendor requirements
-- Application process
-- Important dates
-- Booth fees
-- Market rules
+- **Text** — free-form written response.
+- **Select** — dropdown with predefined options.
+- **Checkbox** — yes/no or multiple selection.
+- **File** — vendor uploads a document or image (e.g. insurance certificate, product photos).
 
-### Adding Custom Questions
+Each custom question you've added has two icons next to it:
 
-Click the "Add Question" button to create additional questions. Choose from these question types:
+- **Yellow pencil** — click to edit the question inline (text, type, options, required, description). The question expands into an inline editor with a yellow border.
+- **Red trash** — click to delete the question.
+<Frame caption="Add custom questions">
+  <img
+    src="/images/form-custom-question.png"
+    alt="Add custom questions"
+  />
+</Frame>
 
-1. **Text Answer**
 
-   - Free-form text input
-   - Best for detailed responses
-   - Example: "Describe your products in detail"
+### Product Categories
 
-2. **Multiple Choice**
+Look for the yellow **"Add Product Type"** button. Add the categories vendors can choose from when applying (e.g. "Food", "Handmade", "Vintage", "Art"). Each category has:
 
-   - Creates checkbox options
-   - Add multiple options for vendors to select from
-   - Example: "Which booth size do you prefer?"
+- **Yellow settings icon** — edit the category.
+- **Red trash icon** — delete it.
 
-3. **Yes/No**
-   - Simple yes or no response
-   - Best for clear requirements
-   - Example: "Do you need electricity?"
+Product categories help you organize and filter vendors. You can also set a maximum number of vendors per category and enable auto-waitlisting per category.
+
+<Frame caption="Add product types">
+  <img
+    src="/images/form-products.png"
+    alt="Add Product Types"
+  />
+</Frame>
+
+### Giveaway Section
+
+If you want vendors to contribute prizes for giveaways, look for the **yellow settings icon** next to the giveaway section title. Click it to:
+
+- Show or hide the giveaway section on the form.
+- Customize the title and description.
+
+When enabled, vendors can indicate whether they'd like to contribute a prize and what they'd offer.
+
+<Frame caption="Enable or disable giveaway participation">
+  <img
+    src="/images/form-giveaways.png"
+    alt="Enable or disable giveaway participation"
+  />
+</Frame>
+
+### Tax ID Section
+
+Click the **yellow settings icon** on the Tax ID section to:
+
+- Show or hide the tax ID field.
+- Customize the title and description.
+- Configure which tax ID types are accepted.
+- Set whether it's required.
+
+<Frame caption="Enable or disable tax id collection">
+  <img
+    src="/images/form-tax.png"
+    alt="Enable or disable tax id collection"
+  />
+</Frame>
+
+### Terms & Conditions
+
+Click the **yellow settings or pencil icon** on the terms section to:
+
+- Show or hide terms & conditions.
+- Customize the title.
+- Write your terms text.
+
+When enabled, vendors must agree to your terms before submitting.
+
+<Frame caption="Enable or disable application terms">
+  <img
+    src="/images/form-terms.png"
+    alt="Enable or disable application terms"
+  />
+</Frame>
+
+## Form Settings (Deadline & Waitlist)
+
+Click the **Form Settings** button at the top of the editor to open a dialog where you configure:
+
+### Application Deadline
+
+Set a **deadline** after which the form no longer accepts new applications. After the deadline, vendors see a message that applications are closed (or are automatically placed on the waitlist — see below).
+
+### Auto-Waitlist
+
+Configure an **auto-waitlist threshold** — when the number of approved vendors reaches this number, all new applications are automatically set to "waitlist" status instead of "pending." You can also force all new applications to waitlist regardless of count.
+
+## Import Form from Another Market
+
+Click **Import Form** at the top of the editor to copy all custom questions, product categories, and settings from another market you manage. This saves time when setting up forms for recurring dates or similar events.
+
+## Sharing Your Form
+
+Click **Share** at the top of the editor (or click the URL bar). Your application link looks like:
+
+```
+https://seenmarkets.com/markets/[your-market-id]/apply
+```
+
+Share this link via:
+
+- Email to potential vendors
+- Social media posts
+- Your website
+- The mobile app's Share sheet
 
 <Note>
-  You can mark any custom question as required to ensure vendors provide the
-  information you need.
+  Anyone with the link can apply — no account required to start. Vendors create
+  an account during submission so they can track their application.
 </Note>
 
-## Managing Applications
+## What Vendors See
 
-### Setting Deadlines
+When a vendor opens the application link, they go through a multi-step form:
 
-Access deadline settings in the "Deadline" tab:
+1. **Instructions** — your market info and instructions. They click "Start Application" to continue.
+2. **Name and email** — basic contact info.
+3. **Full form** — standard fields (business name, description, contact), your custom questions, product categories, giveaway contribution (if enabled), tax ID (if enabled), and terms & conditions (if enabled).
+4. **Submit** — creates their vendor account (if new) and sends the application.
 
-<Frame caption="Application Deadline Settings">
-  <img src="/images/deadline-form.png" alt="Deadline Settings" />
-</Frame>
+After submitting, the vendor is redirected to their vendor portal where they can track the application status.
 
-Set a specific date when applications will close automatically.
+## After Vendors Apply
 
-### Waitlist Configuration
+Applications appear in your **Vendor management** table on the market page. From there you can:
 
-Manage your waitlist settings in the "Waitlist" tab:
+- Review each submission (expand to see all responses).
+- Set status: **Approved**, **Waitlisted**, **Denied**, or leave as **Pending**.
+- Vendors automatically receive an email when you change their status.
 
-<Frame caption="Waitlist Settings">
-  <img src="/images/waitlist-form.png" alt="Waitlist Settings" />
-</Frame>
-
-Two ways to handle waitlisting:
-
-1. **Force Waitlist Mode**
-
-   - Toggle to immediately waitlist all new applications
-   - Useful when market is full
-
-2. **Automatic Waitlist**
-   - Set a maximum number of approved vendors
-   - Applications automatically go to waitlist when limit is reached
-
-## Sharing Your Application
-
-Make your application form available to potential vendors:
-
-<Frame caption="Share Application Form">
-  <img src="/images/share-form.png" alt="Share Application Form" />
-</Frame>
-
-Click the "Share" button to:
-
-- Copy the application form URL
-- Share directly with vendors
-- Add to your market website
-- Include in promotional materials
-
-## Best Practices
-
-<AccordionGroup>
-  <Accordion icon="pen-to-square" title="Form Design">
-    - Keep additional information clear and concise - Group related custom
-    questions together - Only mark questions as required if essential - Use
-    appropriate question types for the information needed
-  </Accordion>
-  <Accordion icon="calendar" title="Timeline Management">
-    - Set realistic application deadlines - Consider using waitlist mode during
-    peak seasons - Monitor application volume against your vendor limit
-  </Accordion>
-  <Accordion icon="share" title="Distribution Tips">
-    - Share the form link in multiple channels - Include in vendor outreach
-    emails - Post on your market's social media - Add to your website's vendor
-    information page
-  </Accordion>
-</AccordionGroup>
+For more on managing vendors after they apply, see [Vendor Management](/essentials/vendor-management).
 
 ## Frequently Asked Questions
 
 <AccordionGroup>
-  <Accordion icon="pen" title="Can I remove standard questions?">
-    No, standard questions ensure you collect essential vendor information and
-    cannot be removed. You can add additional questions as needed.
+  <Accordion icon="pen" title="Can I edit the form after vendors have applied?">
+    Yes. Changes apply to future applications only — existing submissions are
+    not affected.
+  </Accordion>
+  <Accordion icon="copy" title="Can I reuse a form for another market?">
+    Yes. Use **Import Form** to copy custom questions and settings from any of
+    your other markets. When you duplicate/add another date, the form is copied
+    automatically.
   </Accordion>
   <Accordion icon="clock" title="What happens after the deadline?">
-    The form automatically stops accepting new applications after the deadline.
-    You can still review and process existing applications.
+    After the deadline, the form shows a closed message. If you've configured
+    auto-waitlist or force-waitlist, late applications may be accepted but placed
+    on the waitlist.
   </Accordion>
-  <Accordion icon="list" title="How does waitlist mode work?">
-    When activated, new applications are automatically marked as waitlisted
-    instead of pending, either through manual toggle or when reaching your
-    vendor limit.
+  <Accordion icon="eye" title="Is there a separate edit mode?">
+    No. The form editor is a live preview with yellow edit controls overlaid.
+    You see exactly what vendors see, plus the yellow-highlighted areas where
+    you can customize.
   </Accordion>
 </AccordionGroup>
 
@@ -171,16 +235,16 @@ Click the "Share" button to:
     icon="users"
     href="/essentials/vendor-management"
   >
-    Review and process vendor applications
+    Review applications and manage vendors
   </Card>
   <Card title="Booth Map" icon="map" href="/essentials/booth-map">
     Assign booths to approved vendors
   </Card>
   <Card
-    title="Digital Market Guide"
-    icon="qrcode"
-    href="/essentials/digital-market-guide"
+    title="Payment Processing"
+    icon="credit-card"
+    href="/essentials/payment-processing"
   >
-    Showcase approved vendors to shoppers
+    Collect booth fees from vendors
   </Card>
-</CardGroup>{" "}
+</CardGroup>

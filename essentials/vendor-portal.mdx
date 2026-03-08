@@ -5,118 +5,196 @@ description: "Centralized hub for vendors to manage their market participation"
 
 ## Overview
 
-The Vendor Portal is a centralized dashboard where vendors can manage all aspects of their market participation. From tracking applications to managing booth assignments and accessing resources, everything vendors need is in one place.
+The Vendor Portal is where vendors manage everything about their market participation — applications, booth assignments, payments, messaging with hosts, loyalty rewards, and their business profile. It's available on the web at [seenmarkets.com](https://seenmarkets.com) and in the Seen Markets mobile app.
 
 ## Accessing the Portal
 
-Vendors automatically get access to the portal when they submit their first market application. This creates their Seen Markets vendor account, allowing them to:
-
-- Manage multiple markets
-- Keep their vendor profile updated
-- Access all market resources
+Vendors get access when they submit their first application or create an account. Sign in at [seenmarkets.com](https://seenmarkets.com) or the mobile app.
 
 <Frame caption="Vendor Portal Dashboard">
-  <img src="/images/vendor-portal.png" alt="Vendor Portal Dashboard" />
+  <img src="/images/vendor-dash.png" alt="Vendor Portal Dashboard" />
 </Frame>
 
-## Key Features
+## Dashboard
 
-<CardGroup cols={2}>
-  <Card title="Market Management" icon="store">
-    Track participation in multiple markets
-  </Card>
-  <Card title="Application Status" icon="clipboard-check">
-    Monitor application progress
-  </Card>
-  <Card title="Booth Details" icon="map-pin">
-    View assigned booth locations
-  </Card>
-  <Card title="Payment Tracking" icon="credit-card">
-    Handle booth fee payments
-  </Card>
-</CardGroup>
+The vendor dashboard shows:
+
+- **Upcoming markets** — all events you've applied to, with status (pending, approved, waitlisted, denied).
+- **Pending payments** — outstanding payment requests from hosts with a link to pay.
+- **Market updates** — notifications from hosts (schedule changes, reminders, etc.).
+- **Booth info** — your assigned booth or option to pick one (when self-selection is enabled).
 
 ## Managing Markets
 
-### Market Participation
-
-- View all current and past markets
-- See market details and important dates
-- Access market-specific resources
-- Receive market host updates
-
 ### Application Status
 
-- Track pending applications
-- View approved markets
-- Check waitlist status
-- Review denied applications
+Track every application:
 
-## Booth Management
+- **Pending** — waiting for host review.
+- **Approved** — you're in. Check for booth assignment and payments.
+- **Waitlisted** — on the list; you'll be notified if a spot opens.
+- **Denied** — not accepted for this event.
 
-### Booth Assignments
+### Apply to More Dates
 
-- View assigned booth location
-- Access interactive booth map
-- See neighboring vendors
-- Find market amenities
+If a host runs recurring events, you'll see their other dates. Apply to additional dates with **one tap** — your business info is prefilled. Choose which dates you want to attend.
 
-### Resources
+<Frame caption="See other dates to join">
+  <img src="/images/vendor-other-dates.png" alt="See other market dates to join" />
+</Frame>
 
-- Access Print Shop for booth supplies
-- Download market materials
-- View setup instructions
-- Get signage templates
+
+### Update Your Application
+
+Made a mistake or need to change something? Open the market and tap **Edit application** to update your submission (opens on the web).
+
+### Cancel Participation
+
+Changed your mind? Open the market details and use **Cancel participation** to withdraw. The host will be notified.
+
+## Explore and Find Markets
+
+<Frame caption="Explore & Join">
+  <img src="/images/vendor-join.png" alt="Explore and join" />
+</Frame>
+
+### Explore (app)
+
+The **Explore** tab shows upcoming markets from hosts you've already worked with. An easy way to find more dates or new events from organizers you know.
+
+### Find Markets (app)
+
+Search for new markets by name, location, state, or "near me." Apply directly from the results.
+
+
+
+### Explore (web)
+
+At [seenmarkets.com/v/explore](https://seenmarkets.com/v/explore), browse markets from hosts you've worked with and apply to new dates.
+
+### Find a Local Market (public directory)
+
+Visit [seenmarkets.com/find-a-local-market](https://seenmarkets.com/find-a-local-market) to browse a public directory of all published markets on Seen Markets. You can search by name, browse by state, or use your location to find markets near you. No login required.
+
+## Booth Selection
+
+<Frame caption="Booth Selection">
+  <img src="/images/vendor-pick.png" alt="Booth Selection" />
+</Frame>
+
+When a host enables booth self-selection:
+
+1. You see the interactive booth map with available booths.
+2. Select a booth. **Free booths** confirm immediately; **paid booths** go to Stripe checkout.
+3. Reservations have a **time limit** — complete checkout before the hold expires.
+
+If the host assigns your booth manually, you'll see your assignment in the market details and the booth map.
 
 ## Payments
 
 ### Payment Requests
 
-- View pending booth fee requests
-- Process payments securely
-- Track payment history
-- Download receipts
+When a host requests payment (e.g. booth fee):
+
+- You receive an email with a secure Stripe checkout link.
+- The request also appears on your dashboard and in the mobile app.
+- Tap **Pay Now** to complete the payment.
+
+### Payment History
+
+View all past payments at [seenmarkets.com/v/payments](https://seenmarkets.com/v/payments) or in the mobile app under **Menu → Payment History**.
+
+<Frame caption="Payments due">
+  <img src="/images/vendor-payments-due.png" alt="Payments due" />
+</Frame>
+
+<Frame caption="Payment history with receipt download">
+  <img src="/images/vendor-payment-receipt.png" alt="Payment history with receipt download" />
+</Frame>
+
+## Direct Messaging
+
+Message hosts directly about specific events:
+
+- **Web:** Open a market and use the messaging feature.
+- **App:** Tap **Message organizer** from the market details, or go to the **Messages** tab for all conversations.
+
+Messages are organized per-market so conversations stay in context.
+
+## Loyalty Program
+
+Some hosts run a **loyalty program** that rewards vendors for repeat participation:
+
+- See your progress toward the next reward in the app's **Loyalty** tab or at [seenmarkets.com/v/loyalty-program](https://seenmarkets.com/v/loyalty-program).
+- Rewards are typically discounts on booth fees based on number of markets attended.
+- Each host's program is separate.
+
+<Frame caption="Loyalty program tracking for vendors">
+  <img src="/images/vendor-loyalty.png" alt="Loyalty program tracking for vendors" />
+</Frame>
 
 ## Profile Management
 
-### Vendor Profile
+Keep your vendor profile updated — it's used across all applications.
 
-- Update business information
-- Manage contact details
-- Edit business description
+<Frame caption="Vendor profile">
+  <img src="/images/vendor-profile.png" alt="vendor profile" />
+</Frame>
 
-<Note>
-  Your vendor profile information automatically fills future market
-  applications, saving you time and ensuring consistency.
-</Note>
 
-## Market Updates
+### What you can edit
 
-### Notifications
-
-- Receive important announcements
-- View schedule changes
-- Get weather alerts
-- See policy updates
+- **Business info** — name, description, product categories.
+- **Logo** — upload your business logo.
+- **Contact** — email, phone.
+- **Address** — business address.
+- **Social links** — Instagram, TikTok, X, Facebook, YouTube.
+- **Payment methods** — Venmo, Cash App, PayPal usernames (for hosts to see).
 
 <Note>
-  All market updates are preserved in your portal for future reference.
+  Your profile info automatically fills future market applications, saving time
+  and ensuring consistency.
 </Note>
+
+## Market Updates and Notifications
+
+- Hosts can send market-wide updates (schedule changes, weather alerts, setup instructions).
+- Updates appear on your dashboard and in the market details.
+- You also receive an email notification.
+- All updates are preserved for future reference.
+
+## Booth Design 
+[seenmarkets.com/judge-my-booth](https://seenmarkets.com/judge-my-booth)
+
+In the mobile app's **Booth Design** tab:
+
+- **Get AI feedback** — upload a photo of your booth setup and get suggestions.
+- **Order booth supplies** — labels, packaging, bags, banners, signs, business cards, posters from the Print Shop.
+
+<Frame caption="Get booth design suggestions">
+  <img src="/images/vendor-judge.png" alt="Get booth design suggestions" />
+</Frame>
+
 
 ## Best Practices
 
 <AccordionGroup>
   <Accordion icon="user" title="Profile Management">
-    - Keep contact information current - Update product listings regularly -
-    Maintain accurate business details - Add high-quality photos
+    - Keep contact information current.
+    - Upload a quality logo — it appears on booth maps and market pages.
+    - Update product categories so hosts know what you sell.
+    - Add social links so hosts can promote you.
   </Accordion>
   <Accordion icon="bell" title="Staying Informed">
-    - Check portal regularly - Review market updates promptly - Track
-    application deadlines - Monitor payment requests
+    - Enable push notifications in the app.
+    - Check your dashboard regularly for updates and payment requests.
+    - Review booth assignment details before event day.
   </Accordion>
   <Accordion icon="calendar" title="Market Preparation">
-    - Review booth assignments early - Order supplies in advance - Download
-    necessary materials - Track important dates
+    - Apply to recurring dates early — popular events fill up.
+    - Choose your booth promptly when self-selection opens.
+    - Order booth supplies well before the event.
+    - Review the Digital Market Guide to see what shoppers will see.
   </Accordion>
 </AccordionGroup>
 
@@ -124,16 +202,26 @@ Vendors automatically get access to the portal when they submit their first mark
 
 <AccordionGroup>
   <Accordion icon="key" title="How do I get portal access?">
-    Your portal account is automatically created when you submit your first
-    market application through Seen Markets.
+    Your account is created when you submit your first application or sign up at
+    seenmarkets.com. The mobile app uses the same account.
   </Accordion>
   <Accordion icon="arrows-rotate" title="How do I update my profile?">
-    Your profile can be updated at any time from the portal dashboard. Changes
-    will automatically apply to future market applications.
+    On the web: go to your profile page. In the app: tap **Edit Profile** from
+    the header. Changes apply to all future applications.
   </Accordion>
   <Accordion icon="clock-rotate-left" title="Can I see past markets?">
-    Yes, you can view your complete market history, including past
-    participation, payments, and communications.
+    Yes. Your complete market history — past participation, payments, and
+    messages — is available in your dashboard.
+  </Accordion>
+  <Accordion icon="message" title="Can I message hosts?">
+    Yes. Use DMs from the market details page or the Messages tab in the app.
+    Markets also have a group chat channel in the mobile app for open
+    discussion.
+  </Accordion>
+  <Accordion icon="building" title="Can I also become a market host?">
+    Yes. Your Seen Markets account can be both a vendor and a host. Create an
+    organization from your account menu and switch between contexts. See the
+    [become a host](/how-to/become-a-host) guide for details.
   </Accordion>
 </AccordionGroup>
 
@@ -150,7 +238,7 @@ Vendors automatically get access to the portal when they submit their first mark
   >
     Preview your booth in the market guide
   </Card>
-  <Card title="Booth Map" icon="map" href="/essentials/booth-map">
-    View your booth location
+  <Card title="Mobile App" icon="mobile" href="/mobile-app/vendors">
+    Use the mobile app as a vendor
   </Card>
-</CardGroup>{" "}
+</CardGroup>

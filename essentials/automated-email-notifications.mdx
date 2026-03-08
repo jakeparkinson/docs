@@ -5,122 +5,106 @@ description: "Overview of all automated emails sent by Seen Markets"
 
 ## Overview
 
-Seen Markets automatically sends email notifications to keep vendors, market hosts, and shoppers informed of important updates and events. You can preview all email templates at [seenmarkets.com/settings/vendor-emails](https://seenmarkets.com/settings/vendor-emails).
+Seen Markets automatically sends email notifications to keep vendors, hosts, and shoppers informed. You can customize status update templates and control which notifications are sent from [seenmarkets.com/settings/email-preferences](https://seenmarkets.com/settings/email-preferences).
 
 ## Vendor Notifications
 
 ### Application Status Updates
 
-Sent when a vendor's application status changes to:
+Sent when you change a vendor's status:
 
-- Approved
-- Denied
-- Waitlisted
+- **Approved** — vendor is accepted.
+- **Denied** — vendor is not accepted.
+- **Waitlisted** — vendor is on the waiting list.
+- **Cancelled** — vendor's participation is cancelled.
 
-These emails ensure vendors are promptly notified of their application status.
+<Note>
+  You can **customize the content** of each status email template. Go to
+  Settings → Email Preferences & Templates to edit the approved, denied,
+  waitlist, and cancelled email templates for your organization. Each template
+  can have different messaging.
+</Note>
 
 ### Welcome Email
 
-Sent immediately after a vendor submits their first application:
+Sent when a vendor submits their first application:
 
-- Introduces Seen Markets
-- Explains the vendor portal
-- Provides next steps
-- Includes login information
+- Introduces Seen Markets.
+- Explains the vendor portal.
+- Provides login information and next steps.
 
 ### Payment Notifications
 
-#### Payment Requests
+**Payment requests:** Sent when you request payment from a vendor — includes the amount, description, and a secure Stripe checkout link.
 
-Sent when a market host requests payment:
-
-- Payment amount
-- Payment purpose (e.g., booth fee)
-- Secure payment link
-- Due date information
-
-#### Payment Cancellations
-
-Sent when a payment request is cancelled:
-
-- Confirmation of cancellation
-- Reason (if provided)
-- Next steps if applicable
+**Payment cancellations:** Sent when you cancel a payment request.
 
 ### Market Updates
 
-Sent when market hosts share important information:
+Sent when you use **Send Update** to share announcements with vendors — schedule changes, weather alerts, setup instructions, reminders, etc.
 
-- Schedule changes
-- Weather updates
-- Setup instructions
-- Policy changes
-- General announcements
+### Vendor Cancellation
 
-## Market Host Notifications
+Sent to the host when a vendor cancels their participation in a market.
+
+## Host Notifications
 
 ### New Application Alert
 
 Sent when a vendor submits an application:
 
-- Vendor business name
-- Application timestamp
-- Link to review application
-- Quick action buttons
+- Vendor business name.
+- Link to review the application.
+- Quick action buttons.
+
+### Updated Application
+
+Sent when a vendor updates their existing application.
 
 ### Market Creation Guide
 
-Sent after creating a new market:
+Sent after you create a new market:
 
-- Setup checklist
-- Next steps
-- Important features to configure
-- Helpful resources
+- Setup checklist and next steps.
+- Important features to configure.
 
 ## Shopper Notifications
 
-### Giveaway Winner Notification
+### Giveaway Winner
 
-Sent to winners of market giveaways:
+Sent to giveaway winners with:
 
-- Prize details
-- Claim instructions
-- Market host contact information
-- Participating vendor information
+- Prize details.
+- Claim instructions from the host.
+- Market and vendor information.
 
-## Best Practices
+## Email Preferences
 
-<AccordionGroup>
-  <Accordion icon="envelope" title="Email Management">
-    - Keep email contact information current - Check spam folders if missing
-    emails - Add Seen Markets to safe senders - Follow email instructions
-    promptly
-  </Accordion>
-  <Accordion icon="clock" title="Response Times">
-    - Review application notifications quickly - Process payment requests
-    promptly - Respond to market updates as needed - Claim prizes within
-    specified timeframes
-  </Accordion>
-  <Accordion icon="inbox" title="Organization Tips">
-    - Create email filters for Seen Markets - Save important emails - Follow up
-    on action items - Keep track of payment links
-  </Accordion>
-</AccordionGroup>
+Control which automated emails are sent from **Settings → Email Preferences & Templates** at [seenmarkets.com/settings/email-preferences](https://seenmarkets.com/settings/email-preferences):
+
+- Toggle individual notification types on or off.
+- Customize the content of status update emails (approved, denied, waitlist, cancelled).
+- Changes apply to all markets in your organization.
+
+## Email Logs
+
+View a history of all sent emails at **Settings → Email Logs** ([seenmarkets.com/settings/email-logs](https://seenmarkets.com/settings/email-logs)). See delivery status, recipient, and content for every email your organization has sent.
 
 ## Frequently Asked Questions
 
 <AccordionGroup>
   <Accordion icon="gear" title="Can I customize these emails?">
-    Email templates are standardized to ensure consistent communication, but
-    market hosts can customize the content of market updates.
+    Yes. Status update emails (approved, denied, waitlist, cancelled) have
+    customizable templates in Settings → Email Preferences. Market update
+    content is written by you when you send it.
   </Accordion>
   <Accordion icon="clock-rotate-left" title="How quickly are emails sent?">
-    Emails are sent immediately when triggered by system events (status changes,
-    applications, etc.).
+    Emails are queued and sent within seconds of the triggering event.
   </Accordion>
-  <Accordion icon="envelope-open" title="What if I don't receive an email?">
-    Check your spam folder and ensure your email address is correct in your
-    account settings. Contact support if issues persist.
+  <Accordion icon="envelope-open" title="What if a vendor doesn't receive an email?">
+    Check Email Logs to confirm delivery. Ask the vendor to check their spam
+    folder and add Seen Markets to their safe senders. Contact support if issues
+    persist.
   </Accordion>
 </AccordionGroup>
 
@@ -128,16 +112,16 @@ Sent to winners of market giveaways:
 
 <CardGroup>
   <Card title="Vendor Portal" icon="user" href="/essentials/vendor-portal">
-    Manage your vendor account
+    What vendors see when they receive notifications
   </Card>
   <Card title="Send Updates" icon="paper-plane" href="/essentials/send-update">
-    Send market-wide notifications
+    Send market-wide announcements
   </Card>
   <Card
-    title="Vendor Management"
-    icon="users"
-    href="/essentials/vendor-management"
+    title="Email Integrations"
+    icon="envelope"
+    href="/essentials/email-integrations"
   >
-    Process vendor applications
+    Sync vendor and shopper lists to Mailchimp or Flodesk
   </Card>
-</CardGroup>{" "}
+</CardGroup>

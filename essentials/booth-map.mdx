@@ -5,11 +5,11 @@ description: "Create and manage your market's interactive booth layout"
 
 ## Overview
 
-The Booth Map Designer helps you create professional, interactive layouts of your market space. Design your venue layout, manage booth assignments, and provide clear navigation for vendors and shoppers.
+The Booth Map Designer is a drag-and-drop canvas where you create your market's layout. Place booths, add landmarks, upload a background image of your venue, and assign vendors to specific booth spaces. The finished map appears in the Digital Market Guide for shoppers.
 
 ## Accessing the Designer
 
-Access the Booth Map Designer directly from your market's management page:
+Open your market's management page and click the **Booth Map** card.
 
 <Frame caption="Market Management Page - Click the 'Booth Map' card to open the designer">
   <img
@@ -20,88 +20,130 @@ Access the Booth Map Designer directly from your market's management page:
 
 ## Creating Your Layout
 
-When you first open the designer, you'll see an empty canvas ready for your market layout:
+When you first open the designer, you'll see an empty canvas:
 
 <Frame caption="Empty Booth Map Designer">
   <img src="/images/empty-booth-map.png" alt="Empty Booth Map Designer" />
 </Frame>
 
-### Import Existing Layout
+### Upload a Background Image
 
-If you have an existing market layout you'd like to use:
+Upload a floor plan, aerial photo, or venue diagram to use as a reference layer behind your booths:
 
-- Click the "Import Layout" button
-- Select the market you want to import the layout from
-- The layout will be copied to your current market
+1. Click the **Background** option in the designer toolbar.
+2. Upload your image.
+3. Position, resize, and adjust the **opacity** so booths are easy to see on top.
 
-### Adding Landmarks
+<Frame caption="Empty Booth Map Designer">
+  <img src="/images/booth-map-designer.png" alt="Booth Map with background, booths, and landmarks" />
+</Frame>
 
-Use landmarks to mark important locations in your market:
+This helps you match your digital layout to the real-world venue.
 
-1. Click the "Add Landmark" button
-2. Choose from preset options:
-   - Entrance
-   - Exit
-   - Bathrooms
-   - Doors
-   - Power outlets
-   - Custom (add your own label)
-3. Place the landmark on your map
+### Import an Existing Layout
+
+If you've already designed a layout for a previous market:
+
+1. Click **Import Layout**.
+2. Select the market to copy from.
+3. Booths, landmarks, and the background image transfer to your current market.
 
 ### Adding Booths
 
 <Steps>
   <Step title="Create Booths">
-    Click the "Add Booths" button to open the booth creation dialog:
+    Click **Add Booths** to open the booth creation dialog:
     <Frame caption="Add Booths Dialog">
       <img src="/images/add-booths.png" alt="Add Booths Dialog" />
     </Frame>
   </Step>
   <Step title="Specify Details">
-    Enter: - Booth width - Booth height - Number of booths to create
+    Enter:
+    - **Width** and **height** (in feet)
+    - **Number of booths** to create
+    - Optional: **price per booth**
   </Step>
   <Step title="Place Booths">
-    - Booths will appear in the map area - Drag and drop them to desired
-    locations - Arrange them to match your venue layout
+    Booths appear on the canvas. Drag and drop them to position. You can:
+    - **Rename** each booth (e.g. "A1", "B3")
+    - **Rotate** booths to match your venue
+    - **Resize** individual booths
+    - **Duplicate** a booth
+    - **Set or change the price**
+    - **Remove** a booth
   </Step>
 </Steps>
 
-### Managing Booths
+### Adding Landmarks
 
-Click on any booth to access management options:
+Use landmarks to mark important locations:
+
+1. Click **Add Landmark**.
+2. Choose a type: Entrance, Exit, Bathrooms, Doors, Power outlets, Food, Parking, or Custom (your own label).
+3. Place the landmark on the canvas.
+
+### Scale
+
+Adjust the **scale** setting (`boothPixelsPerFoot`, range 2–30) to control how booth dimensions translate to the canvas. This lets you fit your layout to the actual size of your venue.
+
+## Assigning Vendors to Booths
+
+Click any booth on the canvas to see management options:
 
 <Frame caption="Booth Management Options">
   <img src="/images/booth-assign-vendor.png" alt="Booth Management Options" />
 </Frame>
 
-Available actions:
-
-- Assign vendor to booth
-- Rotate booth orientation
-- Remove booth from map
+- **Assign vendor** — select from your approved vendors. The vendor's name appears on the booth.
+- **Rotate** — change booth orientation.
+- **Remove** — delete the booth.
 
 <Note>
-  Assigned booths will appear green in the designer to help you track which
-  spaces are taken. This color coding is only visible in the designer view, not
-  in the public Digital Market Guide.
+  Assigned booths appear green in the designer to help you track which spaces
+  are taken. This color is only visible in the designer, not in the public
+  Digital Market Guide.
 </Note>
+
+You can also assign booths from the **Vendor management** table on the market page — expand a vendor row and assign a booth from there.
+
+## Booth Pricing
+
+Set a **price on individual booths** when you create them or by editing an existing booth. Prices are used when vendor booth self-selection is enabled (see below).
+
+## Vendor Booth Self-Selection
+
+Let approved vendors **pick their own booth** instead of assigning them manually:
+
+1. On your market's management page, click **Vendor Self Assign** button in the top right.
+2. Enable booth self-selection.
+
+### How it works for vendors
+
+- Approved vendors see the booth map and available booths.
+- **Free booths:** vendor selects → confirms → booth is assigned.
+- **Paid booths:** vendor selects → goes to Stripe checkout → booth is assigned after payment.
+- If a vendor doesn't complete checkout within the hold time, the reservation expires and the booth becomes available again.
 
 ## Best Practices
 
 <AccordionGroup>
   <Accordion icon="ruler" title="Layout Planning">
-    - Start with landmarks to establish key reference points - Group similar
-    booth sizes together - Leave adequate space for foot traffic - Consider
-    power outlet access when placing booths
+    - Upload a background image of your venue first so you can match the digital layout to reality.
+    - Start with landmarks to establish reference points.
+    - Group similar booth sizes together.
+    - Leave adequate space for foot traffic.
   </Accordion>
   <Accordion icon="arrows-to-dot" title="Booth Organization">
-    - Use consistent orientation within sections - Create clear aisles and
-    pathways - Place similar vendors near each other - Ensure easy access to
-    amenities
+    - Use consistent naming (A1, A2, B1, B2…) so vendors know where to go.
+    - Create clear aisles and pathways.
+    - Place similar vendors near each other.
+    - Consider power outlet access when placing booths.
   </Accordion>
   <Accordion icon="pen-to-square" title="Design Tips">
-    - Label landmarks clearly - Verify booth dimensions match vendor needs -
-    Double-check vendor assignments - Review layout from shopper perspective
+    - Check booth dimensions match vendor needs.
+    - Verify vendor assignments before publishing.
+    - Review the layout from the shopper's perspective in the Digital Market Guide preview.
+    - Use Import Layout to reuse your design for recurring dates.
   </Accordion>
 </AccordionGroup>
 
@@ -112,16 +154,22 @@ Available actions:
     icon="arrows-rotate"
     title="Can I modify the layout after creating it?"
   >
-    Yes, you can add, remove, or move booths and landmarks at any time. Changes
-    will automatically update in your Digital Market Guide.
+    Yes. Add, remove, or move booths and landmarks at any time. Changes
+    automatically update in the Digital Market Guide.
   </Accordion>
   <Accordion icon="copy" title="Can I reuse layouts?">
-    Yes, use the "Import Layout" feature to copy a layout from another market
-    you manage.
+    Yes. Use **Import Layout** to copy from another market. If you use **Add
+    another date** (duplicate market), the booth map is copied automatically.
   </Accordion>
-  <Accordion icon="users" title="How do vendors see their booth assignments?">
-    Vendors can view their assigned booth location through the vendor portal and
-    in the Digital Market Guide.
+  <Accordion icon="users" title="How do vendors see their booth?">
+    Vendors see their assigned booth in the vendor portal, the mobile app, and
+    the Digital Market Guide. If booth self-selection is enabled, they can pick
+    their own booth from the map.
+  </Accordion>
+  <Accordion icon="credit-card" title="How do booth fees work?">
+    Set a price on a booth. When self-selection is enabled, vendors pay via
+    Stripe at checkout. You can also manually request payment from the vendor
+    management table.
   </Accordion>
 </AccordionGroup>
 
@@ -145,4 +193,4 @@ Available actions:
   <Card title="Print Shop" icon="print" href="/services/print-shop">
     Order booth number signs and market maps
   </Card>
-</CardGroup>{" "}
+</CardGroup>

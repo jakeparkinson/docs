@@ -1,0 +1,90 @@
+---
+title: "How to collect payments from vendors"
+description: "Exactly how to collect booth fees and other payments from vendors"
+---
+
+## Three ways to collect payment
+
+Pick the method that fits your workflow. You can mix and match across vendors.
+
+---
+
+### 1. Request payment directly
+
+The most common method. You send a payment request and the vendor gets a Stripe checkout link.
+
+<Steps>
+  <Step title="Open your vendor table">
+    Go to [seenmarkets.com](https://seenmarkets.com) → your market's management page → scroll to the **Vendor management** table.
+  </Step>
+  <Step title="Request payment">
+    Expand a vendor row and click **Request Payment**. Enter:
+    - **Amount** (e.g. $75)
+    - **Description** (e.g. "Booth Fee — 10x10 Space")
+  </Step>
+  <Step title="Vendor pays">
+    The vendor gets an email with a secure Stripe checkout link. They click it and pay. The payment also shows as "Pay Now" in the vendor's mobile app and portal. Once paid, the status updates automatically.
+  </Step>
+</Steps>
+
+---
+
+### 2. Booth pricing + self-selection
+
+Set prices on booths and let approved vendors pay when they pick their spot. Fully hands-off.
+
+<Steps>
+  <Step title="Set booth prices">
+    In the [Booth Map Designer](/essentials/booth-map), set a **price** on each booth when you create or edit it (e.g. $50 for a 10x10, $100 for a corner spot).
+  </Step>
+  <Step title="Enable self-selection">
+    On the market management page, open **Booth Selection Settings** and enable vendor self-selection. Set a hold time (how long a vendor can hold a reservation before it expires).
+  </Step>
+  <Step title="Vendors pick and pay">
+    Approved vendors see the booth map with prices. They select a booth, go to Stripe checkout, and pay. The booth is assigned automatically after payment.
+  </Step>
+</Steps>
+
+---
+
+### 3. Record a manual payment
+
+For cash, check, Venmo, or any payment outside of Stripe.
+
+<Steps>
+  <Step title="Open the vendor row">
+    In the vendor management table, expand the vendor.
+  </Step>
+  <Step title="Record payment">
+    Click **Record Payment** (manual). Enter the amount and description, then mark as paid.
+  </Step>
+  <Step title="Done">
+    The vendor's payment status updates. No Stripe fees apply since payment happened outside the platform.
+  </Step>
+</Steps>
+
+## Before you can collect payments
+
+You need **Stripe connected** to use methods 1 and 2. Set this up at [seenmarkets.com/settings/payments](https://seenmarkets.com/settings/payments) or from the **Getting started checklist** in the mobile app.
+
+- We charge a **2% platform fee** on top of Stripe's standard fees.
+- You can **pass the 2% fee to vendors** so they cover it — configure this in your payment settings.
+
+## Tracking payments
+
+All payments (Stripe and manual) are tracked in the vendor management table:
+
+- **Pending** — requested, waiting for vendor.
+- **Paid** — completed.
+- **Failed** — Stripe attempt failed.
+- **Cancelled** — you cancelled the request.
+
+You can also **cancel** pending requests and **resend** the payment link if a vendor lost the email.
+
+## Where vendors pay
+
+- **Email** — they get a Stripe checkout link.
+- **Mobile app** — pending payments show on the Schedule tab with "Pay Now."
+- **Web portal** — pending payments appear on the vendor dashboard.
+
+For full details, see [Payment Processing](/essentials/payment-processing).
