@@ -22,23 +22,49 @@
             "pages": ["introduction", "quickstart"]
           },
           {
-            "group": "How-to guides for hosts",
+            "group": "For Hosts",
             "pages": [
-              "recurring-dates",
-              "vendor-accounts-demo",
-              "how-to/add-vendors",
-              "how-to/collect-payments",
-              "how-to/edit-event-map",
-              "how-to/set-up-giveaway",
-              "how-to/share-market",
-              "how-to/message-vendors",
-              "how-to/set-up-loyalty-program",
-              "how-to/add-team-members",
-              "how-to/add-schedule-to-website"
+              "essentials/vendor-applications",
+              "essentials/vendor-management",
+              "essentials/booth-map",
+              "essentials/payment-processing",
+              "essentials/digital-market-guide",
+              "essentials/giveaways",
+              "essentials/send-update",
+              "essentials/automated-email-notifications",
+              "essentials/email-integrations"
             ]
           },
           {
-            "group": "How-to guides for vendors",
+            "group": "For Vendors",
+            "pages": ["essentials/vendor-portal"]
+          },
+          {
+            "group": "Mobile App",
+            "pages": ["mobile-app", "mobile-app/hosts", "mobile-app/vendors"]
+          },
+          {
+            "group": "Print Shop",
+            "pages": ["services/print-shop"]
+          },
+          {
+            "group": "How-to Guides for Hosts",
+            "pages": [
+              "how-to/add-vendors",
+              "how-to/collect-payments",
+              "how-to/edit-event-map",
+              "how-to/share-market",
+              "how-to/message-vendors",
+              "how-to/set-up-giveaway",
+              "how-to/set-up-loyalty-program",
+              "how-to/add-team-members",
+              "how-to/add-schedule-to-website",
+              "recurring-dates",
+              "vendor-accounts-demo"
+            ]
+          },
+          {
+            "group": "How-to Guides for Vendors",
             "pages": [
               "how-to/apply-to-market",
               "how-to/find-markets",
@@ -46,32 +72,6 @@
               "how-to/pay-booth-fees",
               "how-to/become-a-host"
             ]
-          },
-          {
-            "group": "Mobile app",
-            "pages": ["mobile-app", "mobile-app/hosts", "mobile-app/vendors"]
-          },
-          {
-            "group": "Seen Markets for Hosts",
-            "pages": [
-              "essentials/digital-market-guide",
-              "essentials/booth-map",
-              "essentials/vendor-applications",
-              "essentials/vendor-management",
-              "essentials/send-update",
-              "essentials/giveaways",
-              "essentials/automated-email-notifications",
-              "essentials/payment-processing",
-              "essentials/email-integrations"
-            ]
-          },
-          {
-            "group": "Seen Markets for Vendors",
-            "pages": ["essentials/vendor-portal"]
-          },
-          {
-            "group": "Print Shop",
-            "pages": ["services/print-shop"]
           }
         ]
       }
