@@ -37,7 +37,12 @@
           },
           {
             "group": "For Vendors",
-            "pages": ["essentials/vendor-portal"]
+            "pages": [
+              "essentials/vendor-portal",
+              "essentials/vendor-page",
+              "essentials/vendor-email-list",
+              "essentials/vendor-auto-emails"
+            ]
           },
           {
             "group": "Mobile App",
