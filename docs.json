@@ -31,6 +31,7 @@
               "essentials/digital-market-guide",
               "essentials/giveaways",
               "essentials/send-update",
+              "essentials/messaging",
               "essentials/automated-email-notifications",
               "essentials/email-integrations"
             ]
@@ -75,6 +76,7 @@
               "how-to/find-markets",
               "how-to/choose-your-booth",
               "how-to/pay-booth-fees",
+              "how-to/message-organizer",
               "how-to/become-a-host"
             ]
           }
